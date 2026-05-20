@@ -1,0 +1,170 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #1f1d1d;
+}
+
+.container {
+    width: 900px;
+    height: 500px;
+    display: flex;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    background: white;
+}
+
+.Logo {
+    width: 100%;
+    height: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+img {
+    width: 150px;
+}
+
+
+.Esquerda {
+    width: 50%;
+    background: #C00000;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+}
+
+.Esquerda h1 {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.Esquerda p {
+    font-size: 18px;
+}
+
+.Direita {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.parteLogin {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+}
+
+.parteLogin h2 {
+    margin-bottom: 30px;
+    font-size: 32px;
+    color: #333;
+}
+
+.parteLogin input {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    outline: none;
+    font-size: 16px;
+}
+
+.parteLogin input:focus {
+    border: 1px solid #C00000
+}
+
+.parteLogin button {
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    background: #C00000;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.parteLogin button:hover {
+    transform: scale(1.03);
+    background: #d90900;
+}
+
+.parteLogin a {
+    margin-top: 15px;
+    text-decoration: none;
+    color: #555;
+    text-align: center;
+}
+
+.parteLogin a:hover {
+    color: #ff0c00;
+}
+
+.clienteEmpresa {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+    align-items: center;
+}
+
+.clienteEmpresa label {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (max-width: 581px) {
+    .container {
+        width: 100%;
+        height: 100vh;
+        flex-direction: column;
+        overflow: hidden;
+
+    }
+
+    .Esquerda {
+        width: 100%;
+        height: 20%;
+    }
+
+    .Direita {
+        width: 100%;
+        height: 50%;
+    }
+
+    .parteLogin {
+        width: 90%;
+    }
+
+    .Logo {
+        width: 120px;
+        position: relative;
+        top: 480px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .parteLogin {
+        position: relative;
+        top: -120px; 
+    }
+}
