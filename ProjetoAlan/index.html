@@ -1,49 +1,128 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
-
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sosauto</title>
     <link rel="stylesheet" href="src/Styles/index.css">
-    <title>Tela de Login</title>
 </head>
-
 <body>
 
-    <header class="container">
-
-        <div class="Esquerda">
-            <h1>Bem-vindo!</h1>
-            <p>Faça login para continuar.</p>
+    <header class="cabecalho">
+        <div class="logo">
+            <img src="../ProjetoAlan/src/img/1000274377_2__Traced_-removebg-preview.png" alt="Logo">
         </div>
 
-        <div class="Direita">
-            <main class="parteLogin">
-                <section class="Logo">
-                    <img src="src/img/1000274377_2__Traced_-removebg-preview.png" alt="Ícone de Login">
-                </section>
-                <input type="email" class="email" placeholder="E-mail" required>
-                <input type="password" class="password" placeholder="Senha" required>
+        <nav class="menu">
+            <a href="">Serviços</a>
+            <a href="">Como funciona</a>
+            <a href="">Planos</a>
+            <a href="">Sobre</a>
+        </nav>
 
-                <section class="clienteEmpresa">
-                    <label>
-                        <input type="radio" name="tipoUsuario" value="cliente" checked>
-                        Cliente
-                    </label>
-                    <label>
-                        <input type="radio" name="tipoUsuario" value="empresa">
-                        Guincheiro
-                    </label>
-
-                </section>
-                <button type="submit" class="loginButton" onclick="login()">Entrar</button>
-                <a href="#">Esqueci minha senha</a>
-
-            </main>
-        </div>
+        <button class="btn-login">Entrar</button>
     </header>
-    <script src="src/JS/index.js"></script>
+
+    <section class="inicio">
+
+        <div class="texto">
+            <h1>SOCORRO VEICULAR <br><span>EM SEGUNDOS</span></h1>
+
+            <p>
+                Peça guincho, bateria, pane seca e 
+                assistência diretamente pelo celular.
+            </p>
+
+            <div class="botoes">
+                <button class="btn-vermelho">CHAMAR AGORA</button>
+
+                <button class="btn-demo">
+                    VER DEMONSTRAÇÃO
+                </button>
+            </div>
+        </div>
+
+        <div class="celular">
+             
+          
+        </div>
+
+    </section>
+
+    <section class="servicos">
+
+        <h2>Nossos serviços</h2>
+
+        <div class="cards">
+
+            <div class="card">
+                <h3>Guincho 24h</h3>
+                <p>Atendimento rápido a qualquer hora.</p>
+            </div>
+
+            <div class="card">
+                <h3>Recarga de bateria</h3>
+                <p>Energizamos seu veículo onde você estiver.</p>
+            </div>
+
+            <div class="card">
+                <h3>Pane seca</h3>
+                <p>Combustível entregue no seu local.</p>
+            </div>
+
+            <div class="card">
+                <h3>Troca de pneu</h3>
+                <p>Vamos até você e resolvemos.</p>
+            </div>
+
+            <div class="card">
+                <h3>Chaveiro</h3>
+                <p>Abertura de portas e muito mais.</p>
+            </div>
+
+            <div class="card">
+                <h3>Segurança garantida</h3>
+                <p>Profissionais verificados e qualificados.</p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="funciona">
+
+        <h2>Como funciona</h2>
+
+        <div class="passos">
+
+            <div class="passo">
+                <div class="numero">1</div>
+
+                <h3>Abra o app</h3>
+
+                <p>Faça login e informe sua localização.</p>
+            </div>
+
+            <div class="passo">
+                <div class="numero">2</div>
+
+                <h3>Escolha o serviço</h3>
+
+                <p>Selecione o que você precisa e confirme.</p>
+            </div>
+
+            <div class="passo">
+                <div class="numero">3</div>
+
+                <h3>Receba ajuda</h3>
+
+                <p>Acompanhe em tempo real até a chegada.</p>
+            </div>
+
+        </div>
+
+    </section>
+    <script src="index.js" defer></script>
+
 </body>
-
-
 </html>

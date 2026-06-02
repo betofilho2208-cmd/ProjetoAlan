@@ -2,169 +2,263 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Arial;
 }
 
 body {
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: #1f1d1d;
-}
-
-.container {
-    width: 900px;
-    height: 500px;
-    display: flex;
-    border-radius: 20px;
-    overflow: hidden;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
-    background: white;
-}
-
-.Logo {
-    width: 100%;
-    height: 30%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-img {
-    width: 150px;
-}
-
-
-.Esquerda {
-    width: 50%;
-    background: #C00000;
+    background: #000;
     color: white;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 40px;
 }
 
-.Esquerda h1 {
-    font-size: 40px;
-    margin-bottom: 10px;
-}
-
-.Esquerda p {
-    font-size: 18px;
-}
-
-.Direita {
-    width: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.parteLogin {
-    width: 80%;
-    display: flex;
-    flex-direction: column;
-}
-
-.parteLogin h2 {
-    margin-bottom: 30px;
-    font-size: 32px;
-    color: #333;
-}
-
-.parteLogin input {
+.cabecalho {
     width: 100%;
-    padding: 15px;
-    margin-bottom: 20px;
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    outline: none;
-    font-size: 16px;
+    height: 15vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5vw;
+    background: #000000;
 }
 
-.parteLogin input:focus {
-    border: 1px solid #C00000
+.menu {
+    display: flex;
+    gap: 3vw;
+
 }
 
-.parteLogin button {
-    padding: 15px;
-    border: none;
-    border-radius: 10px;
-    background: #C00000;
+.menu a {
     color: white;
-    font-size: 16px;
-    cursor: pointer;
-    transition: 0.3s;
-}
-
-.parteLogin button:hover {
-    transform: scale(1.03);
-    background: #d90900;
-}
-
-.parteLogin a {
-    margin-top: 15px;
     text-decoration: none;
-    color: #555;
+    font-size: 1vw;
+}
+
+.btn-login {
+    width: 7vw;
+    height: 5vh;
+    border: none;
+    background: red;
+    color: white;
+    border-radius: 0.5vw;
+    cursor: pointer;
+}
+
+.inicio {
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 7vw;
+    background: #bca7a7;
+    background-image: url(../ProjetoAlan/src/img/celular2.png);
+    
+    
+    
+
+}
+
+
+.texto {
+    width: 40vw;
+}
+
+.texto h1 {
+    font-size: 3.6vw;
+    line-height: 4.5vw;
+}
+
+.texto h1 span {
+    color: red;
+    font-size: 5.1vw;
+}
+
+.texto p {
+    margin-top: 3vh;
+    font-size: 1.2vw;
+    color: #cfcfcf;
+    line-height: 3vh;
+}
+
+.botoes {
+    display: flex;
+    gap: 2vw;
+    margin-top: 5vh;
+}
+
+.btn-vermelho {
+    width: 12vw;
+    height: 6vh;
+    border: none;
+    background: red;
+    color: white;
+    border-radius: 0.5vw;
+    cursor: pointer;
+}
+
+.btn-demo {
+    width: 14vw;
+    height: 6vh;
+    border: 0.1vw solid white;
+    background: transparent;
+    color: white;
+    border-radius: 0.5vw;
+    cursor: pointer;
+}
+
+
+.servicos {
+    width: 100%;
+    height: 40vh;
+    color: rgb(255, 255, 255);
+    padding: 8vh 5vw;
+    background: #262626;
+    cursor: pointer;
+}
+
+.servicos h2 {
+    text-align: center;
+    font-size: 2vw;
+    margin-bottom: -5vh;
+
+}
+
+.cards {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 8vh;
+    flex-wrap: wrap;
+
+}
+
+.card {
+    width: 14vw;
+    text-align: center;
+    border-left: 0.1vw solid #333;
+    border-right: 0.1vw solid #333;
+
+}
+
+.card h3 {
+    color: red;
+    margin-bottom: 2vh;
+    font-size: 1.1vw;
+}
+
+.card p {
+    font-size: 0.9vw;
+    color: #ffffff;
+}
+
+.funciona {
+    width: 100%;
+    min-height: 40vh;
+    padding: 8vh 5vw;
+    background: #050505;
+}
+
+.funciona h2 {
+    text-align: center;
+    font-size: 2vw;
+}
+
+.passos {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 8vh;
+}
+
+.passo {
+    width: 25vw;
     text-align: center;
 }
 
-.parteLogin a:hover {
-    color: #ff0c00;
-}
-
-.clienteEmpresa {
+.numero {
+    width: 4vw;
+    height: 4vw;
+    border: 0.2vw solid red;
+    border-radius: 50%;
+    margin: auto;
     display: flex;
-    justify-content: space-between;
-    margin-bottom: 20px;
-    padding-left: 50px;
-    padding-right: 50px;
-    align-items: center;
-}
-
-.clienteEmpresa label {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     justify-content: center;
+    align-items: center;
+    color: red;
+    font-size: 1.5vw;
+    margin-bottom: 3vh;
 }
 
-@media (max-width: 581px) {
-    .container {
-        width: 100%;
-        height: 100vh;
-        flex-direction: column;
-        overflow: hidden;
+.passo h3 {
+    margin-bottom: 2vh;
+    font-size: 1.2vw;
+}
 
-    }
+.passo p {
+    color: #bbb;
+    font-size: 0.9vw;
+}
 
-    .Esquerda {
-        width: 100%;
-        height: 20%;
-    }
+html {
+    scroll-behavior: smooth;
+}
 
-    .Direita {
-        width: 100%;
-        height: 50%;
-    }
+.card {
+    transition: 0.4s;
+}
 
-    .parteLogin {
-        width: 90%;
-    }
+.card:hover {
+    transform: translateY(-1vh);
+    box-shadow: 0 0 1vw rgba(34, 33, 33, 0.5);
+}
 
-    .Logo {
-        width: 120px;
-        position: relative;
-        top: 480px;
-        margin-left: auto;
-        margin-right: auto;
-    }
+.btn-vermelho,
+.btn-demo,
+.btn-login {
+    transition: 0.3s;
+}
 
-    .parteLogin {
-        position: relative;
-        top: -120px; 
-    }
+.btn-vermelho:hover,
+.btn-login:hover {
+    background-color: rgb(190, 0, 0);
+    transform: scale(1.05);
+}
+
+.btn-demo:hover {
+    background-color: rgb(255, 0, 0);
+    color: black;
+}
+
+.texto,
+.card,
+.passo {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.aparecer {
+    opacity: 1;
+    transform: translateY(0);
+    transition: 1s;
+}
+
+.celular {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.celular img {
+    max-width: 100%;
+    max-height: 80vh;
+    object-fit: contain;
+}
+
+.logo img {
+    width: 120px;
+    height: auto;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
 }

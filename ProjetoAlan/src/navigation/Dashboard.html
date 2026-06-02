@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SOS Auto Dashboard</title>
+  <link rel="stylesheet" href="../Styles/Dashboard.css">
+</head>
+
+<button class="menuHamburguer">
+  ☰
+</button>
+
+<body>
+
+  <div class="barraLateral">
+    <img src="ProjetoAlan/src/img/1000274377_2__Traced_-removebg-preview.png" alt="Logo SOS Auto" class="logo" />
+
+    <section>
+      <button id="inicioBtn">Início</button>
+      <button id="chamadosBtn">Chamados</button>
+      <button id="localizacaoBtn">Localização</button>
+      <button id="planosBtn">Planos</button>
+      <button id="configBtn">Configurações</button>
+    </section>
+  </div>
+
+  <div class="Cabecalho">
+
+    <div class="Dashboard">
+      <h1>Dashboard</h1>
+
+      <div class="Usuario">
+        <span>Olá, Admin</span>
+      </div>
+    </div>
+
+    <div class="cards">
+
+      <div class="card">
+        <h3>Chamados Hoje</h3>
+        <p>12</p>
+      </div>
+
+      <div class="card">
+        <h3>Guinchos Ativos</h3>
+        <p>5</p>
+      </div>
+
+      <div class="card">
+        <h3>Clientes Online</h3>
+        <p>28</p>
+      </div>
+
+    </div>
+
+    <div class="areaTabela">
+
+      <h2>Últimos Chamados</h2>
+
+      <table>
+        <tr>
+          <th>Cliente</th>
+          <th>Veículo</th>
+          <th>Status</th>
+        </tr>
+
+        <tr>
+          <td>João</td>
+          <td>HB20</td>
+          <td class="Verde">Concluído</td>
+        </tr>
+
+        <tr>
+          <td>Maria</td>
+          <td>Onix</td>
+          <td class="Amarelo">Em andamento</td>
+        </tr>
+
+        <tr>
+          <td>Carlos</td>
+          <td>Corolla</td>
+          <td class="Vermelho">Aguardando</td>
+        </tr>
+      </table>
+    </div>
+  </div>
+  <script src="../JS/Dashboard.js"></script>
+</body>
+
+</html>

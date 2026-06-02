@@ -1,0 +1,237 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial;
+}
+
+body {
+  display: flex;
+  background: #f4f4f4;
+  min-height: 100vh;
+}
+
+.barraLateral {
+  width: 18vw;
+  min-width: 180px;
+  height: 100vh;
+  background: #ff0c00;
+  color: white;
+  padding: 2vh 1.5vw;
+}
+.logo {
+  width: 100%;
+  height: auto;
+  margin-bottom: 1vh;
+
+}
+.barraLateral section button:hover {
+  transform: scale(1.1) translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  border-radius: 0.5vw;
+}
+
+.barraLateral h2 {
+  margin-bottom: 5vh;
+  font-size: 2vw;
+}
+
+.barraLateral section {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+}
+
+.barraLateral section button {
+  transition: all 300ms ease-out;
+  padding: 2vh 0;
+  cursor: pointer;
+  font-size: 1.1vw;
+}
+.Cabecalho {
+  flex: 1;
+  padding: 2vh 2vw;
+}
+.Dashboard {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 4vh;
+}
+
+.Dashboard h1 {
+  font-size: 2.2vw;
+}
+
+.usuario {
+  background: white;
+  padding: 1.2vh 1vw;
+  border-radius: 1vw;
+  font-size: 1vw;
+}
+
+.barraLateral button.ativo {
+  background: white;
+  color: #ff0c00;
+  font-weight: bold;
+  border-radius: 8px;
+}
+
+.barraLateral button {
+  border: none;
+  background: transparent;
+  color: white;
+}
+
+.cards {
+  display: flex;
+  gap: 1.5vw;
+  margin-bottom: 4vh;
+}
+
+.card {
+  flex: 1;
+  background: white;
+  padding: 2.5vh 1.5vw;
+  border-radius: 1vw;
+  box-shadow: 0 0.2vh 0.5vh rgba(0, 0, 0, 0.1);
+}
+
+.card h3 {
+  margin-bottom: 1.5vh;
+  color: #555;
+  font-size: 1.2vw;
+}
+
+.card p {
+  font-size: 2.5vw;
+  font-weight: bold;
+  color: #ff0c00;
+}
+
+
+
+.areaTabela {
+  background: white;
+  padding: 2vh 1.5vw;
+  border-radius: 1vw;
+}
+
+.areaTabela h2 {
+  margin-bottom: 2vh;
+  font-size: 1.8vw;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 2vh 1vw;
+  text-align: left;
+  border-bottom: 0.1vh solid #ddd;
+  font-size: 1vw;
+}
+
+
+
+.Verde {
+  color: green;
+  font-weight: bold;
+}
+
+.Amarelo {
+  color: orange;
+  font-weight: bold;
+}
+
+.Vermelho {
+  color: red;
+  font-weight: bold;
+}
+.menuHamburguer{
+    display:none;
+}
+
+
+@media (max-width: 768px){
+
+    body{
+        flex-direction: column;
+    }
+
+    .menuHamburguer{
+        display:block;
+        position:fixed;
+        top:15px;
+        left:15px;
+        z-index:1001;
+
+        background:#ff0c00;
+        color:white;
+
+        border:none;
+        border-radius:8px;
+
+        font-size:28px;
+        padding:8px 15px;
+        cursor:pointer;
+    }
+
+    .barraLateral{
+        position:fixed;
+        top:0;
+        left:-100%;
+        width:260px;
+        height:100vh;
+
+        transition:0.3s;
+        z-index:1000;
+
+        padding-top:80px;
+    }
+
+    .barraLateral.abrir{
+        left:0;
+    }
+
+    .logo{
+        width:170px;
+        margin:auto;
+        display:block;
+        margin-bottom:20px;
+    }
+
+    .barraLateral section button{
+        width:100%;
+        font-size:16px;
+        padding:15px;
+    }
+
+    .Cabecalho{
+        width:100%;
+        padding:70px 15px 15px 15px;
+    }
+
+    .Dashboard h1{
+        font-size:32px;
+    }
+
+    .cards{
+        flex-direction:column;
+    }
+
+    .card h3{
+        font-size:18px;
+    }
+
+    .card p{
+        font-size:32px;
+    }
+
+    .areaTabela{
+        overflow-x:auto;
+    }
+}
