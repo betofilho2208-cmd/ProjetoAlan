@@ -5,7 +5,6 @@ function login() {
     
      const tipoUsuario = document.querySelector(
         'input[name="tipoUsuario"]:checked').value;
-    // alert("Login realizado com sucesso!");
 
    if (email === "admin@gmail.com" && password === "12345") {
 
