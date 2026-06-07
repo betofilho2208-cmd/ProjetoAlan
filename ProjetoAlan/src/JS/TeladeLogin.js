@@ -2,7 +2,7 @@ const emailInput = document.querySelector(".email");
 const passwordInput = document.querySelector(".password");
 const loginButton = document.querySelector(".loginButton");
 
-// Função para exibir notificações toast
+// notificações toast
 function mostrarToast(mensagem, tipo) {
 
     const toast = document.getElementById("toast");

@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="../Styles/Dashboard.css">
 </head>
 
-<button class="menuHamburguer" onclick="mostrarInicio()">
+<button class="menuHamburguer" onclick="menuHamburguer()">
   ☰
 </button>
 
@@ -18,11 +18,11 @@
     <img src="../img/1000274377_2__Traced_-removebg-preview.png" alt="Logo SOS Auto" class="logo" />
 
     <section>
-      <button >Início</button>
-      <button >Chamados</button>
-      <button >Localização</button>
-      <button>Planos</button>
-      <button>Configurações</button>
+        <button id="inicioBtn">Início</button>
+        <button id="chamadosBtn">Chamados</button>
+        <button id="localizacaoBtn">Localização</button>
+        <button id="planosBtn">Planos</button>
+        <button id="configuracoesBtn">Configurações</button>
     </section>
   </div>
 
@@ -40,7 +40,7 @@
 
       <div class="card">
         <h3>Chamados Hoje</h3>
-        <p>12</p>
+        <p id="chamadosHoje">12</p>
       </div>
 
       <div class="card">
@@ -86,6 +86,7 @@
       </table>
     </div>
   </div>
+
   <script src="../JS/Dashboard.js"></script>
 </body>
 

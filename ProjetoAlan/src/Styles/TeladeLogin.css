@@ -18,7 +18,7 @@ body {
     height: 500px;
     display: flex;
     border-radius: 20px;
-    overflow: hidden;
+    overflow: hidden; /* tudo que ultrapassar o container, não aparecerá */
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
     background: white;
 }
@@ -85,7 +85,7 @@ img {
     font-size: 16px;
 }
 
-.parteLogin input:focus {
+.parteLogin input:focus { /* quando clicar na caixa de texto, a borda ficará vermelha*/
     border: 1px solid #C00000
 }
 
@@ -138,19 +138,14 @@ img {
     right: 20px;
     min-width: 250px;
     max-width: 350px;
-
     padding: 15px 20px;
     border-radius: 12px;
-
     color: white;
     font-weight: 600;
-
     opacity: 0;
     transform: translateX(120%);
     transition: all 0.3s ease;
-
     z-index: 9999;
-
     box-shadow: 0 5px 20px rgba(0, 0, 0, .2);
 }
 
