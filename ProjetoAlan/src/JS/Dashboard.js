@@ -82,46 +82,6 @@ document.getElementById("chamadosBtn").addEventListener("click", function () {
     `;
 });
 
-document.getElementById("localizacaoBtn").addEventListener("click", function () {
-
-    ativarBotao(this);
-
-    areaTabela.innerHTML = `
-        <h2>Localização dos Guinchos</h2>
-
-        <p style="margin-top:15px;">
-            📍 Mapa em desenvolvimento.
-        </p>
-
-        <p style="margin-top:10px;">
-            Guinchos ativos: 5
-        </p>
-    `;
-});
-
-document.getElementById("planosBtn").addEventListener("click", function () {
-
-    ativarBotao(this);
-
-    areaTabela.innerHTML = `
-        <h2>Planos SOS Auto</h2>
-
-        <div style="display:flex; gap:20px; flex-wrap:wrap; margin-top:20px;">
-
-            <div class="card">
-                <h3>Básico</h3>
-                <p style="font-size:18px;">1 guincho/mês</p>
-            </div>
-
-            <div class="card">
-                <h3>Premium</h3>
-                <p style="font-size:18px;">Guinchos ilimitados</p>
-            </div>
-
-        </div>
-    `;
-});
-
 document.getElementById("configuracoesBtn").addEventListener("click", function () {
 
     ativarBotao(this);

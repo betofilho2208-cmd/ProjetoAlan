@@ -27,7 +27,7 @@ function mostrarToast(mensagem, tipo) {
 
     setTimeout(() => {
         toast.classList.remove("show");
-    }, 2500);
+    }, 1500);
 }
 
 function login() {
