@@ -23,7 +23,7 @@ body.fade-out {
   width: 18vw;
   min-width: 180px;
   height: 100vh;
-  background: #ff0c00;
+  background: #C00000;
   color: white;
   padding: 2vh 1.5vw;
 }
@@ -62,6 +62,8 @@ body.fade-out {
 .Cabecalho {
   flex: 1;
   padding: 2vh 2vw;
+  background: #ffffff;
+  
 }
 
 .Dashboard {
@@ -84,7 +86,7 @@ body.fade-out {
 
 .barraLateral button.ativo {
   background: white;
-  color: #ff0c00;
+  color: #C00000;
   font-weight: bold;
   border-radius: 8px;
 }
@@ -118,7 +120,7 @@ body.fade-out {
 .card p {
   font-size: 2.5vw;
   font-weight: bold;
-  color: #ff0c00;
+  color: #C00000;
 }
 
 
@@ -160,7 +162,7 @@ td {
 }
 
 .Vermelho {
-  color: red;
+  color: #C00000;
   font-weight: bold;
 }
 
@@ -182,8 +184,8 @@ td {
     position: fixed;
     top: 15px;
     left: 15px;
-    z-index: 1001;
-    background: #ff0c00;
+    z-index: 1001; /*garante que o botão do menu fique sempre por cima da tabela*/
+    background: #C00000;
     color: white;
     border: none;
     border-radius: 8px;
@@ -195,7 +197,7 @@ td {
   .barraLateral {
     position: fixed;
     top: 0;
-    left: -100%;
+    left: -100%; /* inicia fora da tela, para poder deslizar para dentro quando o menu for aberto */
     width: 260px;
     height: 100vh;
     transition: 0.3s;
@@ -203,7 +205,7 @@ td {
     padding-top: 80px;
   }
 
-  .barraLateral.abrir {
+  .barraLateral.abrir /* quando a classe "abrir" for adicionada, o menu desliza para dentro da tela */ {
     left: 0;
   }
 
@@ -242,8 +244,8 @@ td {
 
   .cards {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 12px;
+    grid-template-columns: 1fr 1fr; /*duas colunas de largura igual*/
+    gap: 12px; /*espaçamento entre os cards*/
     margin-bottom: 25px;
   }
 
@@ -276,11 +278,10 @@ td {
     min-width: 450px;
   }
 
-  th,
-  td {
+  th, td {
     padding: 12px 8px;
     font-size: 14px;
-    white-space: nowrap;
+    white-space: nowrap; /*garante que o texto não quebre em várias linhas, deixando a tela legível em telas pequenas*/
     text-align: center;
   }
 }

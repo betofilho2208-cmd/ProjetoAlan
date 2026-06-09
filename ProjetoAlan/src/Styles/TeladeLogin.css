@@ -166,6 +166,12 @@ img {
     background: #ef4444;
 }
 
+.radioButton {
+    width: 20px;
+    height: 20px;
+    accent-color: #C00000;
+}
+
 
 @media (max-width: 581px) {
     .container {

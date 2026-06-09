@@ -4,11 +4,11 @@ function menuHamburguer() {
 
 const areaTabela = document.querySelector(".areaTabela");
 
-// Controle do botão ativo
+
 const botoes = document.querySelectorAll(".barraLateral button");
 
 function ativarBotao(botao) {
-    botoes.forEach(btn => btn.classList.remove("ativo"));
+    botoes.forEach(btn => btn.classList.remove("ativo"));   /*forEach serve para percorrer uma linha*/
     botao.classList.add("ativo");
 }
 
